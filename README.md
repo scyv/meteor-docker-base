@@ -15,14 +15,14 @@ There are some build arguments that can be used to give the build some input:
 
 | Argument | Description | default |
 |---|---|---|
-| METEOR_RELEASE |  The release version of Meteor | 1.8.0.2 |
-| NODE_VERSION |    The release version of Node   |   v8.15.0 |
+| METEOR_RELEASE |  The release version of Meteor | 1.8.1 |
+| NODE_VERSION |    The release version of Node   |   v8.15.1 |
 | NPM_VERSION | The release version of NPM |    latest |
-| FIBERS_VERSION | Version of the fibers npm package | 2.0.0 |
+| FIBERS_VERSION | Version of the fibers npm package | 3.1.1 |
 | ARCHITECTURE | target architecture (used to fetch the correct node package) | linux-x64 |
 
 You can override the defaults e.g. with:
 
 ```
-docker build -t meteor-base:my-special-arg --build-arg METEOR_RELEASE=1.8.0.1  .
+docker build -t meteor-base:my-special-arg --build-arg METEOR_RELEASE=1.8.1  .
 ```

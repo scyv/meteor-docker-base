@@ -1,10 +1,10 @@
 FROM debian:buster-slim
 LABEL maintainer="scyv@posteo.de"
 
-ARG NODE_VERSION=v8.15.0
-ARG METEOR_RELEASE=1.8.0.2
+ARG NODE_VERSION=v8.15.1
+ARG METEOR_RELEASE=1.8.1
 ARG NPM_VERSION=latest
-ARG FIBERS_VERSION=2.0.0
+ARG FIBERS_VERSION=3.1.1
 ARG ARCHITECTURE=linux-x64
 
 ENV BUILD_DEPS="apt-utils bsdtar gnupg gosu wget curl bzip2 build-essential python python3 python3-distutils git ca-certificates gcc-7" \
