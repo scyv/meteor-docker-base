@@ -15,9 +15,9 @@ There are some build arguments that can be used to give the build some input:
 
 | Argument | Description | default |
 |---|---|---|
-| METEOR_RELEASE |  The release version of Meteor | 1.8.1 |
-| NODE_VERSION |    The release version of Node   |   v8.15.1 |
-| NPM_VERSION | The release version of NPM |    latest |
+| METEOR_RELEASE |  The release version of Meteor | 1.8.2 |
+| NODE_VERSION |    The release version of Node   |   v8.16.2 |
+| NPM_VERSION | The release version of NPM |    6.13.0 |
 | FIBERS_VERSION | Version of the fibers npm package | 3.1.1 |
 | ARCHITECTURE | target architecture (used to fetch the correct node package) | linux-x64 |
 
