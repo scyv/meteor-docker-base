@@ -26,3 +26,8 @@ You can override the defaults e.g. with:
 ```
 docker build -t meteor-base:my-special-arg --build-arg METEOR_RELEASE=1.8.1  .
 ```
+
+## Usage
+
+* To build a complete meteor app in a docker container, use a Dockerfile like https://github.com/scyv/scrum-poker/blob/master/Dockerfile
+* Recommended is a docker-compose file like https://github.com/scyv/scrum-poker/blob/master/docker-compose.yml to start a complete environment (with mongodb)
