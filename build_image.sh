@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t meteor-base:latest .
+docker build -t scyv/meteor-base:latest .
