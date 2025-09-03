@@ -1,18 +1,13 @@
-FROM ubuntu:latest
+FROM node:lts-slim
 LABEL maintainer="scyv@posteo.de"
-
 
 ENV BUILD_DEPS="apt-utils curl build-essential git ca-certificates"
 
-RUN set -o xtrace && \
-    mkdir /home/meteor && \
-    useradd --user-group --system --home-dir /home/meteor meteor && \
-    chown meteor:meteor --recursive /home/meteor && \
-    apt-get update -y && apt-get install -y --no-install-recommends ${BUILD_DEPS} 
+RUN apt-get update -y && apt-get install -y --no-install-recommends ${BUILD_DEPS} 
 
-USER meteor
+USER node
 
 RUN curl https://install.meteor.com/ | sh
     
-ENV PATH=~/.meteor:$PATH
+ENV PATH=/home/node/.meteor:$PATH
 
